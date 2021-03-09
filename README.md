@@ -5,7 +5,7 @@
 ## Turtle Logo - Lesson #5,with variables and sprites @unplugged
 **Making the Turtle's Pen Move Up and Down.**
 
-In this lesson you will make the **Turtle Objects** lift it's pen up and down.
+In this lesson you will make the **Turtle Objects** lift their pen's up and down.
 ![color](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson5-advanced/raw/main/assets/pen_up_screenshot.png)
 
 ## Step 1
