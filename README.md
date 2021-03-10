@@ -195,7 +195,7 @@ myApple.moveDirection(TurtleDirection.Backward, 25)
 ## Step 5
 ** Follow Along**
 
-You can also use the ⇢myTurtle set pen up⇠ block again, and change the "up" to "down" to make it leave a trail again.
+You can also use the ⇢myTurtle set pen up⇠ block again, and change the "up" to "down" to make it leave a trail again. Don't forget to move the **Turtle Objects** to see the pen is back down.
 ```blocks
 let myDuck = turtle.fromSprite(sprites.create(img`
     . . . . . . . . . . b 5 b . . . 
