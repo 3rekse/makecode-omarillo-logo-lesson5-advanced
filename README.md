@@ -1,19 +1,19 @@
 ### @explicitHints true
 
-# Turtle Logo - Lesson #5 - Advanced
+# Omarillo Logo - Lesson #5 - Advanced
 
-## Turtle Logo - Lesson #5,with variables and sprites @unplugged
-**Making the Turtle's Pen Move Up and Down.**
+## Omarillo Logo - Lesson #5,with variables and sprites @unplugged
+**Making the Omarillo's Pen Move Up and Down.**
 
-In this lesson you will make the **Turtle Objects** lift their pen's up and down.
+In this lesson you will make the **Omarillo Objects** lift their pen's up and down.
 ![color](https://github.com/Mr-Coxall/makecode-arcade-turtle-logo-lesson5-advanced/raw/main/assets/pen_up_screenshot.png)
 
 ## Step 1
 ** Follow Along**
 
-Once again, all our programs begin with an ⇢``on start``⇠ block. You will again be needing 2 variables called myDuck and myApple and then you need to assign the 2 **Turtle Objects** using the ⇢``set myTurtle to a Turtle Object with sprite □ of kind Player``⇠ block.
+Once again, all our programs begin with an ⇢``on start``⇠ block. You will again be needing 2 variables called myDuck and myApple and then you need to assign the 2 **Omarillo Objects** using the ⇢``set myOmarillo to a Omarillo Object with sprite □ of kind Player``⇠ block.
 ```blocks
-let myDuck = turtle.fromSprite(sprites.create(img`
+let myDuck = omarillo.fromSprite(sprites.create(img`
     . . . . . . . . . . b 5 b . . . 
     . . . . . . . . . b 5 b . . . . 
     . . . . . . b b b b b b . . . . 
@@ -31,7 +31,7 @@ let myDuck = turtle.fromSprite(sprites.create(img`
     . . . c c c c c c c c b b . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player))
-let myApple = turtle.fromSprite(sprites.create(img`
+let myApple = omarillo.fromSprite(sprites.create(img`
     . . . . . . . e c 7 . . . . . . 
     . . . . e e e c 7 7 e e . . . . 
     . . c e e e e c 7 e 2 2 e e . . 
@@ -54,9 +54,9 @@ let myApple = turtle.fromSprite(sprites.create(img`
 ## Step 2
 ** Follow Along**
 
-Previously we have learned how to make the **Turtle Objects** move around the game console and leave a trail. But sometimes we might not want to leave a trail, then what?
+Previously we have learned how to make the **Omarillo Objects** move around the game console and leave a trail. But sometimes we might not want to leave a trail, then what?
 ```blocks
-let myDuck = turtle.fromSprite(sprites.create(img`
+let myDuck = omarillo.fromSprite(sprites.create(img`
     . . . . . . . . . . b 5 b . . . 
     . . . . . . . . . b 5 b . . . . 
     . . . . . . b b b b b b . . . . 
@@ -74,7 +74,7 @@ let myDuck = turtle.fromSprite(sprites.create(img`
     . . . c c c c c c c c b b . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player))
-let myApple = turtle.fromSprite(sprites.create(img`
+let myApple = omarillo.fromSprite(sprites.create(img`
     . . . . . . . e c 7 . . . . . . 
     . . . . e e e c 7 7 e e . . . . 
     . . c e e e e c 7 e 2 2 e e . . 
@@ -92,16 +92,16 @@ let myApple = turtle.fromSprite(sprites.create(img`
     . . . 2 2 e e 4 4 4 2 e e . . . 
     . . . . . 2 2 e e e e . . . . . 
     `, SpriteKind.Player))
-myDuck.moveDirection(TurtleDirection.Forward, 25)
-myApple.moveDirection(TurtleDirection.Backward, 25)
+myDuck.moveDirection(OmarilloDirection.Forward, 25)
+myApple.moveDirection(OmarilloDirection.Backward, 25)
 ```
 
 ## Step 3
 ** Follow Along**
 
-To solve this problem you use the ⇢myTurtle set pen up⇠ block. As the name implies, it lifts the **Turtle Object's** pen up
+To solve this problem you use the ⇢myOmarillo set pen up⇠ block. As the name implies, it lifts the **Omarillo Object's** pen up
 ```blocks
-let myDuck = turtle.fromSprite(sprites.create(img`
+let myDuck = omarillo.fromSprite(sprites.create(img`
     . . . . . . . . . . b 5 b . . . 
     . . . . . . . . . b 5 b . . . . 
     . . . . . . b b b b b b . . . . 
@@ -119,7 +119,7 @@ let myDuck = turtle.fromSprite(sprites.create(img`
     . . . c c c c c c c c b b . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player))
-let myApple = turtle.fromSprite(sprites.create(img`
+let myApple = omarillo.fromSprite(sprites.create(img`
     . . . . . . . e c 7 . . . . . . 
     . . . . e e e c 7 7 e e . . . . 
     . . c e e e e c 7 e 2 2 e e . . 
@@ -137,10 +137,10 @@ let myApple = turtle.fromSprite(sprites.create(img`
     . . . 2 2 e e 4 4 4 2 e e . . . 
     . . . . . 2 2 e e e e . . . . . 
     `, SpriteKind.Player))
-myDuck.moveDirection(TurtleDirection.Forward, 25)
-myApple.moveDirection(TurtleDirection.Backward, 25)
-myDuck.pen(TurtlePenMode.Up)
-myApple.pen(TurtlePenMode.Up)
+myDuck.moveDirection(OmarilloDirection.Forward, 25)
+myApple.moveDirection(OmarilloDirection.Backward, 25)
+myDuck.pen(OmarilloPenMode.Up)
+myApple.pen(OmarilloPenMode.Up)
 ```
 
 ## Step 4
@@ -148,7 +148,7 @@ myApple.pen(TurtlePenMode.Up)
 
 Once the pen is up, if you move again no trail will be left behind.
 ```blocks
-let myDuck = turtle.fromSprite(sprites.create(img`
+let myDuck = omarillo.fromSprite(sprites.create(img`
     . . . . . . . . . . b 5 b . . . 
     . . . . . . . . . b 5 b . . . . 
     . . . . . . b b b b b b . . . . 
@@ -166,7 +166,7 @@ let myDuck = turtle.fromSprite(sprites.create(img`
     . . . c c c c c c c c b b . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player))
-let myApple = turtle.fromSprite(sprites.create(img`
+let myApple = omarillo.fromSprite(sprites.create(img`
     . . . . . . . e c 7 . . . . . . 
     . . . . e e e c 7 7 e e . . . . 
     . . c e e e e c 7 e 2 2 e e . . 
@@ -184,20 +184,20 @@ let myApple = turtle.fromSprite(sprites.create(img`
     . . . 2 2 e e 4 4 4 2 e e . . . 
     . . . . . 2 2 e e e e . . . . . 
     `, SpriteKind.Player))
-myDuck.moveDirection(TurtleDirection.Forward, 25)
-myApple.moveDirection(TurtleDirection.Backward, 25)
-myDuck.pen(TurtlePenMode.Up)
-myApple.pen(TurtlePenMode.Up)
-myDuck.moveDirection(TurtleDirection.Forward, 25)
-myApple.moveDirection(TurtleDirection.Backward, 25)
+myDuck.moveDirection(OmarilloDirection.Forward, 25)
+myApple.moveDirection(OmarilloDirection.Backward, 25)
+myDuck.pen(OmarilloPenMode.Up)
+myApple.pen(OmarilloPenMode.Up)
+myDuck.moveDirection(OmarilloDirection.Forward, 25)
+myApple.moveDirection(OmarilloDirection.Backward, 25)
 ```
 
 ## Step 5
 ** Follow Along**
 
-You can also use the ⇢myTurtle set pen up⇠ block again, and change the "up" to "down" to make it leave a trail again. Don't forget to move the **Turtle Objects** to see the pen is back down.
+You can also use the ⇢myOmarillo set pen up⇠ block again, and change the "up" to "down" to make it leave a trail again. Don't forget to move the **Omarillo Objects** to see the pen is back down.
 ```blocks
-let myDuck = turtle.fromSprite(sprites.create(img`
+let myDuck = omarillo.fromSprite(sprites.create(img`
     . . . . . . . . . . b 5 b . . . 
     . . . . . . . . . b 5 b . . . . 
     . . . . . . b b b b b b . . . . 
@@ -215,7 +215,7 @@ let myDuck = turtle.fromSprite(sprites.create(img`
     . . . c c c c c c c c b b . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player))
-let myApple = turtle.fromSprite(sprites.create(img`
+let myApple = omarillo.fromSprite(sprites.create(img`
     . . . . . . . e c 7 . . . . . . 
     . . . . e e e c 7 7 e e . . . . 
     . . c e e e e c 7 e 2 2 e e . . 
@@ -233,23 +233,23 @@ let myApple = turtle.fromSprite(sprites.create(img`
     . . . 2 2 e e 4 4 4 2 e e . . . 
     . . . . . 2 2 e e e e . . . . . 
     `, SpriteKind.Player))
-myDuck.moveDirection(TurtleDirection.Forward, 25)
-myApple.moveDirection(TurtleDirection.Backward, 25)
-myDuck.pen(TurtlePenMode.Up)
-myApple.pen(TurtlePenMode.Up)
-myDuck.moveDirection(TurtleDirection.Forward, 25)
-myApple.moveDirection(TurtleDirection.Backward, 25)
-myDuck.pen(TurtlePenMode.Down)
-myApple.pen(TurtlePenMode.Down)
-myDuck.moveDirection(TurtleDirection.Forward, 25)
-myApple.moveDirection(TurtleDirection.Backward, 25)
+myDuck.moveDirection(OmarilloDirection.Forward, 25)
+myApple.moveDirection(OmarilloDirection.Backward, 25)
+myDuck.pen(OmarilloPenMode.Up)
+myApple.pen(OmarilloPenMode.Up)
+myDuck.moveDirection(OmarilloDirection.Forward, 25)
+myApple.moveDirection(OmarilloDirection.Backward, 25)
+myDuck.pen(OmarilloPenMode.Down)
+myApple.pen(OmarilloPenMode.Down)
+myDuck.moveDirection(OmarilloDirection.Forward, 25)
+myApple.moveDirection(OmarilloDirection.Backward, 25)
 ```
 ## Step 6
 ** Try it Out**
 
-Now try moving the **Turtle Objects** some different distances, different directions, turning, changing color and lifting it's pen up and down.
+Now try moving the **Omarillo Objects** some different distances, different directions, turning, changing color and lifting it's pen up and down.
 ```blocks
-let myDuck = turtle.fromSprite(sprites.create(img`
+let myDuck = omarillo.fromSprite(sprites.create(img`
     . . . . . . . . . . b 5 b . . . 
     . . . . . . . . . b 5 b . . . . 
     . . . . . . b b b b b b . . . . 
@@ -267,7 +267,7 @@ let myDuck = turtle.fromSprite(sprites.create(img`
     . . . c c c c c c c c b b . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player))
-let myApple = turtle.fromSprite(sprites.create(img`
+let myApple = omarillo.fromSprite(sprites.create(img`
     . . . . . . . e c 7 . . . . . . 
     . . . . e e e c 7 7 e e . . . . 
     . . c e e e e c 7 e 2 2 e e . . 
@@ -287,33 +287,33 @@ let myApple = turtle.fromSprite(sprites.create(img`
     `, SpriteKind.Player))
 myDuck.setPenColor(2)
 myApple.setPenColor(8)
-myDuck.moveDirection(TurtleDirection.Forward, 25)
-myApple.moveDirection(TurtleDirection.Backward, 25)
-myDuck.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
-myApple.turnDirectionByDegrees(TurtleTurnDirection.Left, 90)
-myDuck.pen(TurtlePenMode.Up)
-myApple.pen(TurtlePenMode.Up)
-myDuck.moveDirection(TurtleDirection.Forward, 50)
-myApple.moveDirection(TurtleDirection.Backward, 50)
-myDuck.turnDirectionByDegrees(TurtleTurnDirection.Left, 90)
-myApple.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
+myDuck.moveDirection(OmarilloDirection.Forward, 25)
+myApple.moveDirection(OmarilloDirection.Backward, 25)
+myDuck.turnDirectionByDegrees(OmarilloTurnDirection.Right, 90)
+myApple.turnDirectionByDegrees(OmarilloTurnDirection.Left, 90)
+myDuck.pen(OmarilloPenMode.Up)
+myApple.pen(OmarilloPenMode.Up)
+myDuck.moveDirection(OmarilloDirection.Forward, 50)
+myApple.moveDirection(OmarilloDirection.Backward, 50)
+myDuck.turnDirectionByDegrees(OmarilloTurnDirection.Left, 90)
+myApple.turnDirectionByDegrees(OmarilloTurnDirection.Right, 90)
 myDuck.setPenColor(7)
 myApple.setPenColor(4)
-myDuck.pen(TurtlePenMode.Down)
-myApple.pen(TurtlePenMode.Down)
-myDuck.moveDirection(TurtleDirection.Forward, 25)
-myApple.moveDirection(TurtleDirection.Backward, 25)
+myDuck.pen(OmarilloPenMode.Down)
+myApple.pen(OmarilloPenMode.Down)
+myDuck.moveDirection(OmarilloDirection.Forward, 25)
+myApple.moveDirection(OmarilloDirection.Backward, 25)
 ```
 
 ## Step 7
 **Success!**
 
-You can now change get the **Turtle** to lift the pen up and down.
+You can now change get the **Omarillo** to lift the pen up and down.
 
 ## Step 8
 **Your Turn**
 
-Create 2 variables, with proper names and assign them to be **Turtle Objects**. Then get each **Turtle Object** to:
+Create 2 variables, with proper names and assign them to be **Omarillo Objects**. Then get each **Omarillo Object** to:
 - move
 - change its trail color
 - turn
@@ -326,10 +326,10 @@ Create 2 variables, with proper names and assign them to be **Turtle Objects**. 
 ## Step 9
 **Done**
 
-You have successfully completed your fifth lesson in Turtle Logo.
+You have successfully completed your fifth lesson in Omarillo Logo.
 
 ```ghost
-let myTurtle = turtle.fromSprite(sprites.create(img`
+let myOmarillo = omarillo.fromSprite(sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
@@ -347,9 +347,9 @@ let myTurtle = turtle.fromSprite(sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player))
-myTurtle.moveDirection(TurtleDirection.Forward, 25)
-myTurtle.turnDirectionByDegrees(TurtleTurnDirection.Right, 90)
-myTurtle.setPenColor(0)
-myTurtle.pen(TurtlePenMode.Up)
-myTurtle.say("Hello, World!")
+myOmarillo.moveDirection(OmarilloDirection.Forward, 25)
+myOmarillo.turnDirectionByDegrees(OmarilloTurnDirection.Right, 90)
+myOmarillo.setPenColor(0)
+myOmarillo.pen(OmarilloPenMode.Up)
+myOmarillo.say("Hello, World!")
 ```
